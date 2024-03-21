@@ -1,0 +1,35 @@
+\documentclass[12pt]{article}
+\usepackage{fontspec}
+\usepackage[utf8]{inputenc}
+\setmainfont{Bodoni 72 Book}
+\usepackage[paperwidth=9in,paperheight=12in,margin=1in,headheight=0.0in,footskip=0.5in,includehead,includefoot,portrait]{geometry}
+\usepackage[absolute]{textpos}
+\TPGrid[0.5in, 0.25in]{23}{24}
+\parindent=0pt
+\parskip=12pt
+\usepackage{nopageno}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{tikz}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+
+\begin{document}
+
+\begin{center}
+\huge NOTES FOR THE INTERPRETERS
+\end{center}
+
+\begingroup
+\textbf{General: \circled{1} } 
+\endgroup
+
+\begingroup
+\textbf{Electronics: \circled{1} Tape electronics} are played at certain points throughout the piece. These can be controlled by the interpreters via a button or foot pedal, or by an engineer. The activation and deactivation of the tape is signaled by the boxed text ``TAPE" followed by a dashed, hooked line spanning the accompanied music. \textbf{\circled{2} Transduction of a weaker version of the tape electronics' signal to the tam-tam and bass drum} is accomplished using a pair of \textbf{transducers} \\
+( recommended: \url{https://www.daytonaudio.com/product/1087/daex25-sound-exciter-pair} ). \\ 
+\textbf{The signal to be transduced} is toggled on and off in this score via the text directions \textbf{Transduction Signal ON} and \textbf{Transduction Signal OFF}. Sometimes these transducers are \textbf{left on the surface of the bass drum} and \textbf{hung in front of the tam-tam}, signaled by \textbf{text instruction}. Sometimes, the interpreter \textbf{holds one transducer in each hand}, and \textbf{touches them to the bass drum or tam-tam}. In this case, the transducers are treated as \textbf{implements}, whereby the \textbf{location of the touch} is signaled by \textbf{locational dots positioned in a circle} which represents the respective instrument, and the \textbf{pressure of the touch} is signaled by \textbf{effort dynamics}. \textbf{\circled{3} Feedback} is played with by holding a \textbf{dynamic microphone} in varying proximities to a \textbf{small speaker}. The \textbf{closer to the speaker} the microphone is held, the \textbf{higher the pitch of the feedback} will become. As such, this score composes the technique with \textbf{approximate pitch contours} for the interpreter to attempt. \textbf{The dynamic microphone's input is processed} using the Supercollider patch included in this score. 
+\endgroup
+
+\end{document}
